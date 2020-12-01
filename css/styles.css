@@ -41,6 +41,17 @@ img {
   margin-right: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* ЛОГОТИП */
 .logo {
   font-family: "raleway", sans-serif;
@@ -275,6 +286,21 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.feature-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-color: var(--secondary-bg-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna\ 1.svg);
+  background-repeat: no-repeat;
 }
 
 /* Деятельность */
