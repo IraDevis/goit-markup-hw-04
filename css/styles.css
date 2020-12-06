@@ -308,20 +308,19 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.feature-icon {
+.feature-icon-block {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-
   background-color: var(--secondary-bg-color);
 }
 
-.feature-list svg {
-  display: block;
+.feature-icon {
   max-width: 70px;
   height: 70px;
-  margin: 25px 100px;
+  margin-right: auto;
+  margin-left: auto;
   background-position: center;
 }
 
@@ -447,6 +446,7 @@ footer {
 
 .client-link {
   display: block;
+  background-position: center;
 }
 
 /* СТРАНИЦА "ПОРТФОЛИО" */
