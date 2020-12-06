@@ -412,25 +412,24 @@ footer {
 }
 
 .social-icon {
+  width: 20px;
+  height: 20px;
   fill: var(--main-icons-color);
 }
 
 .social-link:hover,
 .social-link:focus {
   border-radius: 50%;
-  background-color: var(--accent-text-color: #2196f3);
-  fill: var(--title-text-color: #ffffff);
+  background-color: var(--accent-text-color);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--title-text-color);
 }
 
 .social-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.socials svg {
-  width: 20px;
-  height: 20px;
-  background-position: center;
-  fill: #afb1b8;
 }
 
 /* Клиенты */
