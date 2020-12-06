@@ -465,23 +465,20 @@ footer {
   align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  color: var(--main-icons-color);
 }
 
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: var(--main-icons-color);
+  fill: currentColor;
 }
 
 .social-link:hover,
 .social-link:focus {
-  border-radius: 50%;
   background-color: var(--accent-text-color);
-}
-
-.social-icon:hover,
-.social-icon:focus {
-  fill: var(--title-text-color);
+  color: var(--title-text-color);
 }
 
 .social-item:not(:last-child) {
@@ -515,20 +512,17 @@ footer {
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  color: var(--main-icons-color);
 }
 
 .client-icon {
-  fill: var(--main-icons-color);
+  fill: currentColor;
 }
 
-.client-list a:hover,
-.client-list a:focus {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--accent-text-color);
-}
-
-.client-icon:hover,
-.client-icon:focus {
-  fill: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 
 /* СТРАНИЦА "ПОРТФОЛИО" */
