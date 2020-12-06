@@ -165,14 +165,26 @@ img {
 /* ПОДВАЛ САЙТА */
 footer {
   display: flex;
+  align-items: center;
   background-color: var(--accent-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer-container .logo {
   display: inline-block;
   margin-bottom: 20px;
+  margin-right: 156px;
 }
 
 .address {
@@ -212,6 +224,8 @@ footer {
 }
 
 .get-us {
+  display: block;
+  margin-bottom: 20px;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -221,6 +235,36 @@ footer {
   text-align: left;
   color: var(--title-text-color);
 }
+
+.footer-socials .socials {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* .social-link .footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.social-icon .footer-socials {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-icons-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  border-radius: 50%;
+  background-color: var(--accent-text-color);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--title-text-color);
+} */
 
 /* СТРАНИЦА "СТУДИЯ" */
 
@@ -471,6 +515,20 @@ footer {
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.client-icon {
+  fill: var(--main-icons-color);
+}
+
+.client-list a:hover,
+.client-list a:focus {
+  border-color: var(--accent-text-color);
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--accent-text-color);
 }
 
 /* СТРАНИЦА "ПОРТФОЛИО" */
