@@ -236,35 +236,41 @@ footer {
   color: var(--title-text-color);
 }
 
+.footer-socials {
+  /* margin-bottom: 100px; */
+}
+
 .footer-socials .socials {
   margin-left: 0;
   margin-right: auto;
 }
 
-/* .social-link .footer-socials {
+.footer-socials .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--title-text-color);
 }
 
-.social-icon .footer-socials {
+.footer-socials .social-icon {
   width: 20px;
   height: 20px;
-  fill: var(--main-icons-color);
+  fill: currentColor;
 }
 
 .social-link:hover,
 .social-link:focus {
-  border-radius: 50%;
   background-color: var(--accent-text-color);
 }
 
 .social-icon:hover,
 .social-icon:focus {
-  fill: var(--title-text-color);
-} */
+  fill: currentColor;
+}
 
 /* СТРАНИЦА "СТУДИЯ" */
 
