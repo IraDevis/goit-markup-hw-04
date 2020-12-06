@@ -195,10 +195,16 @@ footer {
 /* Hero Section */
 .hero {
   height: 600px;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 280px;
-  background-color: var(--accent-bg-color);
   text-align: center;
+  background-color: var(--accent-bg-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* linear-gradient(to right, rgba(47, 48, 58, 0.4)), */
 }
 
 .hero-title {
@@ -288,9 +294,8 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.feature-item::before {
-  content: "";
-  display: block;
+.feature-icon {
+  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -300,20 +305,12 @@ footer {
   background-position: center;
 }
 
-.icon-antenna::before {
-  background-image: url(../images/antenna\ 1.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock\ 1.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram\ 1.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut\ 1.svg);
+.feature-list svg {
+  display: block;
+  max-width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Деятельность */
@@ -359,7 +356,7 @@ footer {
 
 .team-list .work-position {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   font-weight: 400;
   font-size: 16px;
@@ -382,6 +379,24 @@ footer {
   border-radius: 0 0 4px 4px;
 
   background-color: var(--main-bg-color);
+}
+
+.socials {
+  display: flex;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+.social-link {
+  display: block;
+  /* width: 44px; */
+  height: 44px;
+}
+
+.socials svg {
+  width: 20px;
+  height: 20px;
+  background-position: center;
 }
 
 /* Клиенты */
@@ -456,6 +471,11 @@ footer {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.projects-list a:hover,
+.projects-list a:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .project-item:nth-child(3n) {
