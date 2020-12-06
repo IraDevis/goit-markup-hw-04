@@ -133,6 +133,10 @@ img {
   letter-spacing: 0.02em;
 }
 
+.header-contacts a {
+  align-items: center;
+}
+
 .header-contacts a:hover,
 .header-contacts a:focus {
   color: var(--accent-text-color);
@@ -142,6 +146,7 @@ img {
   display: flex;
   padding-top: 30px;
   padding-bottom: 34px;
+  color: var(--main-text-color);
 }
 
 .header-contacts .item:not(:last-child) {
@@ -154,7 +159,7 @@ img {
 
 .contact-icon {
   margin-right: 10px;
-  margin-top: 14px;
+  fill: currentColor;
 }
 
 .contact-icon:hover,
@@ -213,12 +218,8 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.contact-icon {
-  fill: currentColor;
-}
-
-.contact-icon:hover,
-.contact-icon:focus {
+.footer-contacts a:hover,
+.footer-contacts a:focus {
   color: var(--accent-text-color);
 }
 
@@ -236,7 +237,7 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: left;
-  text-decoration: transparent;
+  text-transform: uppercase;
   color: var(--title-text-color);
 }
 
