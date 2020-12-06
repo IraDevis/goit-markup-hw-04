@@ -138,12 +138,21 @@ img {
 }
 
 .header-contacts .link {
+  display: flex;
   padding-top: 30px;
   padding-bottom: 34px;
 }
 
 .header-contacts .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header-contacts .item {
+  display: flex;
+}
+
+.contact-icon:hover. .contact-icon:focus {
+  fill: var(--accent-text-color);
 }
 
 /* ПОДВАЛ САЙТА */
@@ -195,7 +204,6 @@ footer {
 /* Hero Section */
 .hero {
   height: 600px;
-  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 280px;
   text-align: center;
@@ -302,15 +310,13 @@ footer {
 
   background-color: var(--secondary-bg-color);
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .feature-list svg {
   display: block;
   max-width: 70px;
   height: 70px;
-  margin-left: auto;
-  margin-right: auto;
+  background-position: center;
 }
 
 /* Деятельность */
@@ -389,14 +395,24 @@ footer {
 
 .social-link {
   display: block;
-  /* width: 44px; */
+  width: 44px;
   height: 44px;
+  background-position: center;
+}
+
+/* .social-link:hover,
+.social-link:focus {
+  border-radius: 50%;
+  background-color: var(--accent-text-color: #2196f3;);
+} */
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .socials svg {
   width: 20px;
   height: 20px;
-  background-position: center;
 }
 
 /* Клиенты */
