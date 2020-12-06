@@ -164,6 +164,7 @@ img {
 
 /* ПОДВАЛ САЙТА */
 footer {
+  display: flex;
   background-color: var(--accent-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -208,6 +209,17 @@ footer {
 
 .footer-item:first-child {
   margin-bottom: 9px;
+}
+
+.get-us {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--title-text-color);
 }
 
 /* СТРАНИЦА "СТУДИЯ" */
