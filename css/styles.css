@@ -173,7 +173,7 @@ footer {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -184,7 +184,10 @@ footer {
 .footer-container .logo {
   display: inline-block;
   margin-bottom: 20px;
-  margin-right: 156px;
+}
+
+.footer-adress {
+  margin-right: 70px;
 }
 
 .address {
@@ -233,11 +236,8 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: left;
+  text-decoration: transparent;
   color: var(--title-text-color);
-}
-
-.footer-socials {
-  /* margin-bottom: 100px; */
 }
 
 .footer-socials .socials {
